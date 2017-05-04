@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20170217215823) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "customers", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
@@ -30,7 +33,8 @@ ActiveRecord::Schema.define(version: 20170217215823) do
     t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.index ["customer_id"], name: "index_repairs_on_customer_id"
+    t.index ["customer_id"], name: "index_repairs_on_customer_id", using: :btree
   end
 
+  add_foreign_key "repairs", "customers"
 end
