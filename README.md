@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple customer interface made with Angular 1.6/Rails.
 
-Things you may want to cover:
+Credit for the tutorial:
+https://www.nopio.com/blog/angularjs-single-page-app/
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
